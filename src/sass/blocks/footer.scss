@@ -7,4 +7,54 @@
   text-align: center;
   background-color: #1e1e1e;
   color: #fff;
+  &__title {
+    @include sectionTitle();
+    margin-bottom: 50px;
+  }
+}
+
+.link__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.link__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-shrink: 1;
+  flex-basis: fill;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    a {
+      color: #fff;
+      font-family: 'RalRegular', sans-serif;
+      font-size: 18px;
+    }
+    &:first-child {
+      font-family: 'RalBold', sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .link__list {
+    li {
+      font-size: 14px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  .link__list:nth-child(3) {
+    margin-top: 40px;
+  }
 }
