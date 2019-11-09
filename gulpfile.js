@@ -31,12 +31,11 @@ gulp.task('styles', function() {
 		outputStyle: 'expanded',
 		includePaths: [__dirname + '/node_modules']
 	}))
-	.pipe(concat('styles.min.css'))
 	.pipe(autoprefixer({
 		grid: true,
 		overrideBrowserslist: ['last 10 versions']
 	}))
-	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
+	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Optional. Comment out when debugging
 	.pipe(gulp.dest('src/css'))
 	.pipe(browserSync.stream())
 });
@@ -107,7 +106,7 @@ gulp.task('rsync', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('src/sass/**/*.sass', gulp.parallel('styles'));
+	gulp.watch('src/sass/**/*.scss', gulp.parallel('styles'));
 	gulp.watch(['src/js/custom.js', 'src/js/libs.js'], gulp.parallel('scripts'));
 	gulp.watch('src/*.html', gulp.parallel('code'));
 	gulp.watch('src/img/_src/**/*', gulp.parallel('img'));
