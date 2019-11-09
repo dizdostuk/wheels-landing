@@ -1,6 +1,33 @@
 @import "../vars";
+@import "../fonts";
 
 .header__title {
   color: #000;
 }
 
+.page-header {
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  background-color: #000;
+}
+
+.start-home {
+  width: 500px;
+  &__title {
+    font-size: 48px;
+    font-family: 'RalXBold', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__intro {
+    font-family: 'RalRegular';
+    font-size: 24px;
+    color: #fff;
+    cite {
+      font-family: 'RalLghItalic';
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
