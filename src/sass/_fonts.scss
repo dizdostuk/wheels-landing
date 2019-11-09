@@ -1,6 +1,30 @@
-font-face {
-  font-family: 'Sri-TSCRegular';
+@font-face {
+  font-family: 'RalBlack';
   src: url('../fonts/Raleway-Black.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'RalXBold';
+  src: url('../fonts/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'RalBold';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'RalSmBold';
+  src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'RalRegular';
+  src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'RalLghItalic';
+  src: url('../fonts/Raleway-LightItalic.ttf') format('truetype');
+  font-weight: 300;
 }
