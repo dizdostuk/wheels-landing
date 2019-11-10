@@ -1,0 +1,29 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins";
+
+.about {
+  margin-top: 80px;
+  padding: 50px 0;
+  text-align: center;
+  &__title {
+    @include sectionTitle();
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  &__intro {
+    @include sectionSubTitle();
+    margin-bottom: 18px;
+  }
+  img {
+    width: 85px;
+    margin-bottom: 18px;
+  }
+  &__info {
+    font-family: 'RalSmBold';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding: 0 10%;
+  }
+}

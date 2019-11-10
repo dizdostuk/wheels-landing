@@ -1,0 +1,13 @@
+@import "./vars";
+@import "./fonts";
+
+@mixin sectionTitle {
+  font-family: 'RalXBold';
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+@mixin sectionSubTitle {
+  font-family: 'RalSmBold';
+  font-size: 18px;
+}

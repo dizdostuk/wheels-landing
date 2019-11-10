@@ -1,0 +1,71 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins";
+
+.stats {
+  width: 100%;
+  padding: 95px 0;
+  background: url('../../img/@2x/stats-bg.jpg')no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
+  color: #fff;
+  text-align: center;
+  &__title {
+    @include sectionTitle();
+    margin-bottom: 18px;
+  }
+  &__intro {
+    @include sectionSubTitle();
+  }
+}
+
+.stats__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.stats__item {
+  width: 240px;
+}
+
+.stats__num {
+  font-family: 'RalSmBold';
+  font-size: 72px;
+  line-height: 38px;
+}
+
+.stats__info {
+  font-family: 'RalSmBold';
+  font-size: 24px;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media screen and (max-device-width: 768px) {
+  .stats__list {
+    flex-wrap: wrap;
+  }
+  .stats__item {
+    margin-bottom: 20px;
+  }
+  .stats__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  .stats__item {
+    margin-bottom: 30px;
+  }
+  .stats__item:last-child {
+    margin-bottom: 0;
+  }
+}

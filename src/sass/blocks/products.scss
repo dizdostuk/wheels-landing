@@ -1,0 +1,65 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins";
+
+.featured-products {
+  padding: 50px 0;
+  text-align: center;
+  &__title {
+    @include sectionTitle();
+    margin-bottom: 18px;
+  }
+  &__intro {
+    @include sectionSubTitle();
+    margin-bottom: 40px;
+  }
+}
+
+.product__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-device-width: 600px) {
+  .product__list {
+    justify-content: center;
+  }
+}
+
+.product__item {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #000;
+}
+
+.product__item:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.product__img {
+  width: 198px;
+}
+
+.product__title {
+  font-size: $productTitleSize;
+  font-family: 'RalBold';
+}
+
+.product__price {
+  font-size: $productTitleSize;
+  font-family: 'RalSmBold';
+  margin-bottom: 20px;
+}
+
+.product__link {
+  text-decoration: underline;
+  font-family: 'RalSmBold';
+  font-size: 18px;
+}
