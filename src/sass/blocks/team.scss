@@ -1,0 +1,43 @@
+@import "../vars";
+@import "../fonts";
+@import "../mixins";
+
+.team {
+  padding: 50px 0;
+  background-color: #ededed;
+  text-align: center;
+  &__title {
+    @include sectionTitle();
+    margin-bottom: 18px;
+  }
+  &__intro {
+    @include sectionSubTitle();
+    margin-bottom: 50px;
+  }
+}
+
+.people__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.people {
+  &__img {
+    width: 100%;
+  }
+  &__name {
+    font-family: 'RalXBold', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  &__profession {
+    font-family: 'RalSmBold', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

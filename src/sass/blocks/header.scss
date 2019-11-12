@@ -25,19 +25,19 @@
   text-align: right;
   &__title {
     font-size: 48px;
-    font-family: 'RalXBold', sans-serif;
+    font-family: 'RalXBold', sans-serif, sans-serif;
     color: #fff;
     text-transform: uppercase;
 
     margin-bottom: 30px;
   }
   &__intro {
-    font-family: 'RalRegular';
+    font-family: 'RalRegular', sans-serif;
     font-size: 24px;
     color: #fff;
     line-height:33px;
     cite {
-      font-family: 'RalLghItalic';
+      font-family: 'RalLghItalic', sans-serif;
       font-size: 18px;
       color: #fff;
     }
@@ -82,7 +82,7 @@
 }
 
 .page-header__logo {
-  font-family: 'RalXBold', 'sans-serif';
+  font-family: 'RalXBold', 'sans-serif', sans-serif;
   font-size: 30px;
   font-weight: 900;
   color: #1c1c1c;
@@ -112,7 +112,7 @@
     align-items: center;
     background: none;
     border: none;
-    font-family: 'RalSmBold';
+    font-family: 'RalSmBold', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
     color: #fff;
@@ -172,7 +172,7 @@
 
 .main-nav__item {
   a {
-    font-family: 'RalSmBold';
+    font-family: 'RalSmBold', sans-serif;
     font-size: 18px;
     color: #3b3b3b;
     text-transform: uppercase;
