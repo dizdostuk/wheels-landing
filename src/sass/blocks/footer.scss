@@ -37,6 +37,9 @@
       color: #fff;
       font-family: 'RalRegular', sans-serif;
       font-size: 18px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
     &:first-child {
       font-family: 'RalBold', sans-serif;
@@ -45,7 +48,40 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+.link__list:nth-child(3) {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.fb, .linkedin,
+.inst, .twitter {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-size: 28px !important;
+}
+.fb {
+  background: url("../../img/icons/facebook.svg") no-repeat;
+}
+.linkedin {
+  background: url("../../img/icons/linkedin.svg") no-repeat;
+}
+.inst {
+  background: url("../../img/icons/instagram.svg") no-repeat;
+}
+.twitter {
+  background: url("../../img/icons/twitter.svg") no-repeat;
+}
+
+@media screen and (max-width: 568px) {
   .link__list {
     li {
       font-size: 14px;
@@ -56,5 +92,9 @@
   }
   .link__list:nth-child(3) {
     margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .link__map {
+    width: 258px;
   }
 }
