@@ -38,3 +38,23 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 568px) {
+  .showcase {
+    &__title {
+      font-size: 22px;
+    }
+    &__intro {
+      font-size: 18px;
+    }
+    &__follow {
+      font-size: 18px;
+    }
+  }
+  div.link__list {
+    flex-flow: wrap;
+  }
+  img.link__map {
+    width: 100%;
+  }
+}

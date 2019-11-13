@@ -3,7 +3,6 @@
 @import "../mixins";
 
 .about {
-  margin-top: 80px;
   padding: 50px 0;
   text-align: center;
   &__title {
@@ -30,15 +29,14 @@
 
 @media screen and (max-device-width: 568px) {
   .about {
-    margin-top: 40px;
     &__title {
       font-size: 22px;
     }
     &__intro {
-      font-size: 14px;
+      font-size: 16px;
     }
     &__info {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }

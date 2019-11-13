@@ -61,7 +61,24 @@
   }
 }
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-device-width: 568px) {
+  .stats {
+    padding: 50px 0;
+    &__title {
+      font-size: 22px;
+    }
+    &__intro {
+      font-size: 16px;
+    }
+    &__info {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    &__num {
+      font-size: 52px;
+      margin-bottom: 0;
+    }
+  }
   .stats__item {
     margin-bottom: 30px;
   }
