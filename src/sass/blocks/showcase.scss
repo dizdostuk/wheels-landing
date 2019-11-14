@@ -39,6 +39,15 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .insta__list {
+    flex-direction: row;
+  }
+  .insta__img {
+    width: 228px;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .showcase {
     &__title {
@@ -50,11 +59,5 @@
     &__follow {
       font-size: 18px;
     }
-  }
-  div.link__list {
-    flex-flow: wrap;
-  }
-  img.link__map {
-    width: 100%;
   }
 }

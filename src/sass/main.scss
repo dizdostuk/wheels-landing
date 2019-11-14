@@ -40,6 +40,8 @@ a {
   margin: 0 auto;
 }
 
+
+
 @media screen and (max-device-width: 1024px) {
   .container {
     width: 80%;
@@ -53,3 +55,24 @@ a {
 @import "./blocks/team.scss";
 @import "./blocks/showcase.scss";
 @import "./blocks/footer.scss";
+
+.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 10%;
+  z-index: 100;
+
+  border-top: 0;
+  background-color: #1c1c1c;
+}
+
+.stickyWindow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 10%;
+  z-index: 100;
+
+  border-top: 0;
+}

@@ -81,6 +81,12 @@
   background: url("../../img/icons/twitter.svg") no-repeat;
 }
 
+@media screen and (max-width: 1200px) {
+  .link__map {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .link__list {
     li {
@@ -96,5 +102,11 @@
   }
   .link__map {
     width: 258px;
+  }
+  div.link__list {
+    flex-flow: wrap;
+  }
+  img.link__map {
+    width: 100%;
   }
 }

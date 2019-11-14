@@ -42,6 +42,17 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .people {
+    &__name {
+      font-size: 22px;
+    }
+    &__profession {
+      font-size: 18px;
+    }
+  }
+}
+
 @media screen and (max-width: 568px) {
   .team {
     &__title {
