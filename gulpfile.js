@@ -26,7 +26,7 @@ function bsReload(done) { browserSync.reload(); done(); };
 
 // Custom Styles
 gulp.task('styles', function() {
-	return gulp.src('src/sass/**/*.scss')
+	return gulp.src('src/sass/main.scss')
 	.pipe(sass({
 		outputStyle: 'expanded',
 		includePaths: [__dirname + '/node_modules']

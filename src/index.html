@@ -24,10 +24,8 @@
             <ul class="main-nav__list">
               <li class="main-nav__item"><a href="#about">About</a></li>
               <li class="main-nav__item"><a href="#products">Products</a></li>
-              <li class="main-nav__item"><a href="#services">Services</a></li>
               <li class="main-nav__item"><a href="#team">Our Team</a></li>
               <li class="main-nav__item"><a href="#blog">Blog</a></li>
-              <li class="main-nav__item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
       </div>
@@ -72,7 +70,7 @@
     </div>
   </section>
 
-  <section class="featured-products">
+  <section class="featured-products" id="products">
     <div class="container">
       <h2 class="featured-products__title">Featured products</h2>
       <p class="featured-products__intro">Your chance to shine.</p>
@@ -117,7 +115,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h2 class="team__title">Meet the team</h2>
       <p class="team__intro">People who make magic happen.</p>
@@ -141,7 +139,7 @@
     </div>
   </section>
 
-  <section class="showcase">
+  <section class="showcase" id="blog">
     <div class="container">
       <h2 class="showcase__title">#Social showcase</h2>
       <p class="showcase__intro">Show your customers why your Instagram account is the one they follow.</p>
@@ -200,54 +198,6 @@
     </div>
   </footer>
 
-  <script>
-    let menuList = document.querySelector('.main-nav__list');
-    let menuBtn = document.querySelector('.main-nav__trigger');
-    let logo = document.querySelector('.page-header__logo');
-
-
-    if(menuList.classList.contains('menu-list--opened')) {
-      menuList.classList.remove('menu-list--opened');
-    }
-    if(menuBtn.classList.contains('main-nav__trigger--opened')) {
-      menuList.classList.remove('main-nav__trigger--opened');
-    }
-
-    menuBtn.addEventListener('click', () => {
-      menuBtn.classList.toggle('main-nav__trigger--opened');
-      menuList.classList.toggle('menu-list--opened');
-    });
-
-    //Sticky navbar functionality
-    let navbar = document.querySelector('.page-header__nav');
-    let sticky = navbar.offsetTop;
-
-    if(window.innerWidth <= 1024) {
-
-      window.onscroll = () => {
-        onScrollWheelsDevices();
-      }
-
-      const onScrollWheelsDevices = () => {
-        if(window.pageYOffset >= sticky)
-          navbar.classList.add('sticky');
-        else
-          navbar.classList.remove('sticky');
-      }
-    } else {
-      window.onscroll = () => {
-        onScrollWheelsDesktop();
-      }
-      
-      const onScrollWheelsDesktop = () => {
-        if(window.pageYOffset >= sticky)
-          navbar.classList.add('stickyWindow');
-        else
-          navbar.classList.remove('stickyWindow');
-      }
-    }
-
-
-  </script>
+  <script src="./js/custom.js"></script>
 </body>
 </html>
